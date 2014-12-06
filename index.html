@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dinâmica da participação feminina no congresso</title>
+	<style>
+	.my_chart{
+		border:0px solid #ccc;
+		font:1em 'comic sans ms', serif;
+		width:680px;
+		}
+	.my_chart .waffly{
+		padding:2em;
+		}
+	.my_chart .waffly_dots{
+		list-style:none;
+		margin:0;
+		padding:0;
+		}
+	.my_chart .waffly_dot{
+		display:inline-block;
+		background:url(waffly/imgs/parados.png) right top no-repeat;
+		height:24px;
+		margin-right:6px;
+		width:24px;
+		}
+	.my_chart .waffly_dot.sel{background-position:left top;}
+	.my_chart .waffly_value{
+		color:#7a148c;
+		font-size:2em;
+		margin-bottom:.5em;
+		text-align:center;
+		}
+	.my_chart .waffly_title{
+		margin-top:1em;
+		text-align:center;
+		}
+a {
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+a:link {
+    color: white;
+    background-color: black;
+}
+
+/* visited link */
+a:visited {
+    color: white;
+    background-color: black;
+}
+
+/* mouse over link */
+a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* selected link */
+    color: white;
+    background-color: black;
+} 
+
+	</style>
+</head>
+<body>
+<center>
+<h1>A Câmara das Deputadas</h1>
+<h1>Dinâmica da participação feminina no congresso</h1>
+<br>
+<h2>Proporção de gênero - Comparativo das últimas cinco legislaturas</h2>
+<br>
+<iframe width="786" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1RpKXcczYpyw4gGaNG1ATadQ-UDyzhuEZ8s2fS3iIQRE/pubchart?oid=1909515189&amp;format=interactive"></iframe>
+<br>
+<br>
+
+<h2>Proporção de gênero - Atual legislatura</h2>
+	<div class="my_chart" data-waffly-title="Proporção de gênero - Câmara dXs DeputadXs" data-waffly-value="8.97%">
+		<meter class="chart"></meter>
+	</div>
+
+
+	<script src="waffly/jquery.min.js"></script>
+	<script src="waffly/jquery.waffly.js"></script>
+
+	<script>
+	$(document).ready(function() {
+	
+		//$('.my_chart').data("waffly-value", "75%");
+		//$('.my_chart .chart').
+	
+		$('.my_chart').waffly({
+			graph_reverse:false,
+			graph_animate:true,
+			style_override:true,
+			total_dots: 100,
+		});
+	});
+	</script>
+
+
+<br>
+<iframe width="786" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1RpKXcczYpyw4gGaNG1ATadQ-UDyzhuEZ8s2fS3iIQRE/pubchart?oid=2130789607&amp;format=interactive"></iframe>
+<br><br>
+<a href="deputadXs/index.html" target="_blank">&nbsp;Visualização de Dados: Grafo - Câmara: Partidos e gênero - atual legislatura&nbsp;</a>
+<br><br>
+<h1>Projetos de Leis - algumas visualizações</h1>
+<h2>Nuvem de tags - Projetos de leis propostos por mulheres</h2>
+ <img src="img/nuvem_feminina.png"> 
+ <br> <br>
+<h2>Nuvem de tags - Projetos de leis propostos por homens</h2>
+ <img src="img/nuvem_masculina.png">
+ <br>
+
+<br><br>
+<a href="ProjetosDeLei/index.html" target="_blank">&nbsp;Visualização de Dados: Grafo Projetos de Leis propostos por mulheres - atual legislatura&nbsp;</a>
+<br><br><br>
+</center>
+</body>
+</html>
