@@ -9,24 +9,25 @@ Seria necessário, então buscar formas de compreender como se dava o processo d
 Optamos então por seguir um caminho diferente, que nos permitisse alcançar um resultado próximo daquele aspirado inicialmente. A solução foi analisar, a partir do sistema de indexação da Câmara, que utiliza palavras-chave para segmentar por temas as proposições , os principais temas das proposições de parlamentares mulheres nas legislaturas recentes. 
 
 
-
-Documentação do Projeto Dinâmica da Participação Feminina no Congresso
+<strong>Documentação do Projeto Dinâmica da Participação Feminina no Congresso</strong>
 Dinâmica da Participação Feminina no Congresso é  uma aplicação web que permite a todos os cidadãos conhecerem os temas mais enfatizados pelas Deputadas Federais em suas proposições.
 A análise tem como recorte a 54ª legislatura (2011-2014) e considerou as 801 proposições de 46  deputadas. Observamos a indexação das proposições para identificar os principais temas sobre os quais se propõem a legislar. 
 
-Motivação
+<strong>Motivação</strong>
 O objetivo do projeto é auxiliar a compreensão da dinâmica da representação (ou subrepresentação?) das mulheres no Congresso, fomentando o debate a cerca da formulação de políticas afirmativas e o accoutability de todo o corpo de parlamentares. 
 
 Optamos por desenvolver visualizações de dados que permitam identificar não apenas a presença feminina na câmara dos deputados, mas também padrões temáticos de suas proposições, oferecendo um panorama de caráter mais qualitativo da atuação destas mulheres, identificando padrões temáticos das proposições que apresentam. 
 
 Também buscamos explorar outras possibilidades, como a presença de parlamentares mulheres nas bancadas partidárias, fomentando um debate sobre a participação das mulheres na política pela perspectiva da presença nos partidos. 
-Metodologia
+
+<strong>Metodologia</strong>
 A metodologia de desenvolvimento do trabalho seguiu três etapas básicas:
-Obtenção dos dados:
-Os dados foram obtidos por meio da API disponível nos Dados Abertos da Câmara dos Deputados. Foram coletadas todas as proposições de projetos de lei com autoras do sexo femininos na 54ª legislatura bem como dados de todos os deputados e deputados eleitos na atual legislatura.
 
-Limpeza, tratamento e organização dos dados
-Os dados dos deputados e das deputadas eleitos na atual legislatura bem como os dados dos projetos de lei propostos pelas deputadas foram tratados de modo a poderem ser visualizados em forma de grafos. 
+<strong>Obtenção dos dados</strong>
+Os dados foram obtidos por meio da API disponível nos <a href='http://www2.camara.leg.br/transparencia/dados-abertos/dados-abertos-legislativo'>Dados Abertos</a> da Câmara dos Deputados. Foram coletadas todas as proposições de projetos de lei com autoras do sexo femininos na 54ª legislatura bem como dados de todos os deputados e deputados eleitos na atual legislatura.
 
-Visualização
-Para a visualização dos dados em formato de grafo utilizou-se o software Gephi com o plugin Circular Layout. Os arquivo tratados no Gephi foram exportados em formato *.gexf e então utilizou-se o plugin Gexf-JS Web Viewer para visualização em formato *.html. Para a visualização em formato html dos projetos de lei procedeu-se à personalização do plugin Gexf-JS Web Viewer direto no código-fonte em javascript para que a visualização incorporasse, na exibição, links para os projetos de projetos de lei analisados.
+<strong>Limpeza, tratamento e organização dos dados</strong>
+Os dados dos deputados e das deputadas eleitos na atual legislatura bem como os dados dos projetos de lei propostos pelas deputadas foram tratados de modo a poderem ser visualizados em forma de <a href='http://pt.wikipedia.org/wiki/Teoria_dos_grafos'>grafos</a>. 
+
+<strong>Visualização</strong>
+Para a visualização dos dados em formato de grafo utilizou-se o software <a href='http://gephi.github.io/'>Gephi</a> com o plugin <a href='https://marketplace.gephi.org/plugin/circular-layout/'>Circular Layout</a>. Os arquivo tratados no Gephi foram exportados em formato *.gexf e então utilizou-se o plugin <a href='https://marketplace.gephi.org/plugin/gexf-js-web-viewer/'>Gexf-JS Web Viewer</a> para visualização em formato *.html. Para a visualização em formato html dos projetos de lei procedeu-se à personalização do plugin Gexf-JS Web Viewer direto no código-fonte em javascript para que a visualização incorporasse, na exibição, links para os projetos de projetos de lei analisados.
